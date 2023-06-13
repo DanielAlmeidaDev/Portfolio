@@ -1,0 +1,17 @@
+{
+    "navbar":{
+        "Home": "Home",
+        "AboutUs": "About me",
+        "Skills": "Skills",
+        "Projects": "Projects",
+        "ContactMe": "Contact me"
+    },
+
+    "main":{
+
+        "Hello" : "Hey There 👋 I am",
+        "firstLine" : "I'm",
+        "secondLine" : "a"
+
+    }
+}
