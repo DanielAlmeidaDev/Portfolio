@@ -8,10 +8,26 @@
     },
 
     "main":{
-
-        "Hello" : "Hey There 👋 I am",
+        "Hello" : "Hey There 👋",
         "firstLine" : "I'm",
-        "secondLine" : "a"
+        "secondLine" : "a",
+        "miniDescription" : "I'm portuguese and currently living in São João dos Montes, Vila Franca de Xira. As a full stack programmer, I have a deep passion for coding and creating innovative solutions."
+    },
 
+    "about":{
+
+        "Title": "About me",
+        "FirstParagraph": "I am an ambitious person and I am always willing to learn new technologies. I have a keen interest in working in collaborative teams with well-defined deadlines and goals. I have a natural ability to solve problems and a passion for creating new projects in the area of ​​programming. Throughout my journey, I have been motivated and determined to acquire new knowledge and improve my technical skills.",
+        "SecondParagraph" : "I am constantly up to date with the latest trends and technological advancements, ready to embrace whatever changes come my way. In addition, I am an advocate of healthy and professional work environments, where collaboration and mutual respect are valued.",
+        "ThirdParagraph": "I believe that a good work environment is essential to stimulate creativity and achieve exceptional results. I consider myself a versatile person when it comes to learning new technologies and I am excited to take on the challenges they present. I am open to opportunities that allow me to grow professionally and contribute to innovative projects."
+    },
+    "skills":{
+        "Title": "Skills"
+    },
+    "projects":{
+        "Title": "Projects"
+    },
+    "contacts":{
+        "Title": "Contact Me"
     }
 }

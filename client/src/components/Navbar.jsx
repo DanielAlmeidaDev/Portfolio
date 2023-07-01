@@ -202,19 +202,18 @@ function NavBar() {
     return (
 
         <>
-            <nav className="flex fixed bg-white drop-shadow-sm w-full p-6 dark:bg-zinc-800 z-10">
+            <nav className="flex fixed bg-white drop-shadow-sm w-full p-6 dark:bg-zinc-900 z-10">
 
                 <div className='w-1/2'>
                     <img src={Logo} className='align-middle h-10 ml-8 p-0' id='banner' alt='Banner' />
                 </div>
-
 
                 <div className='w-1/2 grid content-center ' id='pcMenu'>
                     
                     <ul className='inline-block align-middle w-full h-full text-right'>
 
                         <li className='inline text-xs font-bold uppercase m-3 align-middle p-2 ease-out duration-300 text-sky-900  hover:text-teal-800'>
-                            <a  href="#">{t("navbar.Home")}</a>
+                            <a  href="#home">{t("navbar.Home")}</a>
                         </li>
 
                         <li className='inline text-xs font-bold text-gray-400 uppercase m-3 align-middle p-2 dark:text-white ease-out duration-300 hover:text-sky-900  hover:drop-shadow-lg'>
@@ -290,19 +289,19 @@ function NavBar() {
                     </li>
 
                     <li className='p-4 ml-8 mr-8 border-b-2 dark:border-gray-500'>
-                      <a href="#" className='hover:text-sky-900 ease-out duration-300'>{t("navbar.Home")}</a>  
+                      <a href="#home" onClick={toggleMenu} className='hover:text-sky-900 ease-out duration-300'>{t("navbar.Home")}</a>  
                     </li>
                     <li className='p-4 ml-8 mr-8 border-b-2 dark:border-gray-500'>
-                      <a href="#" className='hover:text-sky-900 ease-out duration-300'>{t("navbar.AboutUs")}</a>  
+                      <a href="#about" onClick={toggleMenu} className='hover:text-sky-900 ease-out duration-300'>{t("navbar.AboutUs")}</a>  
                     </li>
                     <li className='p-4 ml-8 mr-8 border-b-2 dark:border-gray-500'  >
-                        <a href="#" className='hover:text-sky-900 ease-out duration-300'>{t("navbar.Skills")}</a>
+                        <a href="#skills" onClick={toggleMenu} className='hover:text-sky-900 ease-out duration-300'>{t("navbar.Skills")}</a>
                     </li>
                     <li className='p-4 ml-8 mr-8 border-b-2 dark:border-gray-500'>
-                        <a href="#" className='hover:text-sky-900 ease-out duration-300'>{t("navbar.Projects")}</a>
+                        <a href="#project" onClick={toggleMenu} className='hover:text-sky-900 ease-out duration-300'>{t("navbar.Projects")}</a>
                     </li>
                     <li className='p-4 ml-8 mr-8 border-b-2 dark:border-gray-500'>
-                        <a href="#" className='hover:text-sky-900 ease-out duration-300'>{t("navbar.ContactMe")}</a>
+                        <a href="#contacts" onClick={toggleMenu} className='hover:text-sky-900 ease-out duration-300'>{t("navbar.ContactMe")}</a>
                     </li>
                     <li className='p-4 ml-8 mr-8border-b-2'>                    
                             <ReactFlagsSelect

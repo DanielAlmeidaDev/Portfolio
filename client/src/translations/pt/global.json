@@ -10,7 +10,25 @@
 
         "Hello" : "Olá 👋",
         "firstLine" : "Eu sou",
-        "secondLine" : "um"
+        "secondLine" : "um",
+        "miniDescription" : "Eu sou português e vivo em São João dos Montes, Vila Franca de Xira. Como programador full stack, tenho uma profunda paixão por programar e desenvolver soluções inovadoras."
 
+    },
+
+    "about":{
+
+        "Title": "Sobre Mim", 
+        "FirstParagraph": "Sou uma pessoa ambiciosa e estou sempre disposta a aprender novas tecnologias. Tenho um grande interesse em trabalhar em equipes colaborativas com prazos e objetivos bem definidos. Tenho uma habilidade natural para resolver problemas e uma paixão pela criação de novos projetos na área de programação.Ao longo da minha jornada, tenho me mantido motivado e determinado a adquirir novos conhecimentos e aprimorar minhas habilidades técnicas.",
+        "SecondParagraph" : "Estou constantemente atualizado om as últimas tendências e avanços tecnológicos, prontos para abraçar as mudanças que surgirem no meu caminho. Além disso, sou defensor de ambientes de trabalho saudáveis e profissionais, onde a colaboração e o respeito mútuo são valorizados. ",
+        "ThirdParagraph": "Acredito que um bom ambiente de trabalho é fundamental para estimular a criatividade e alcançar resultados excepcionais. Considero-me uma pessoa versátil quando se trata de aprender novas tecnologias e estou entusiasmado para enfrentar os desafios que elas apresentam. Estou aberto a oportunidades que me permitam crescer profissionalmente e contribuir para projetos inovadores." 
+    },
+    "skills":{
+        "Title": "Competências"
+    },
+    "projects":{
+        "Title": "Projetos"
+    },
+    "contacts":{
+        "Title": "Contacte-me"
     }
 }
