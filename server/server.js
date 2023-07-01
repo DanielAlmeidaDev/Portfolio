@@ -7,22 +7,20 @@ const cors = require('cors');
 
 //Import DotEnv
 require('dotenv').config();
-
-
 //Grab URL and Client
+
 //DB strings
 const dbName = "Portfolio";
 const collectionName = "Language";
 const url = process.env.NODE_URL_MONGO_LINK;
 
 app.use(cors());
+
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 //Mongo Connection
 const { MongoClient, ServerApiVersion } = require('mongodb');
-
-
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(url, {
