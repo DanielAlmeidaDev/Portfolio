@@ -5,9 +5,9 @@ const Card = ({ title , tags, miniDescription, qualities}) => {
     return (
         <>
 
-            <div class="w-1/4  p-7 h-full container">
+            <div class="lg:w-1/4 sm:w-full md:w-full w-full  p-7 h-full">
 
-                <div class="border-sky-900 border-2 drop-shadow-2xl bg-white dark:bg-zinc-900 bg-opacity-25 rounded-sm p-6 dark:text-gray-400 text-gray-700 relative z-10 pointer-events-auto">
+                <div class="border-sky-900 border-2 drop-shadow-2xl  bg-white dark:bg-zinc-900 bg-opacity-25 rounded-sm p-6 dark:text-gray-400 text-gray-700 relative z-10 pointer-events-auto">
 
                     <div class="flex flex-wrap items-center">
 

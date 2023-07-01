@@ -30,5 +30,13 @@
     },
     "contacts":{
         "Title": "Contacte-me"
+    },
+    "footer":{
+        "Home": "Home",
+        "AboutUs": "Sobre mim",
+        "Skills": "Competências",
+        "Projects": "Projetos",
+        "ContactMe": "Contacte-me",
+        "CopyWrite": "Todos os direitos reservados."
     }
 }

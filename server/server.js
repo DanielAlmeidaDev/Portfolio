@@ -4,20 +4,39 @@ const app = express();
 
 //Import Cors
 const cors = require('cors');
+app.use(cors());
 
 //Import DotEnv
 require('dotenv').config();
-//Grab URL and Client
 
+
+//Import NodeMailer
+const nodemailer = require('nodemailer');
+
+//Email Strings
+const passsword = process.env.NODE_PASSWORD_EMAIL_LINK;
+const emailBase = process.env.NODE_EMAIL_PORTFOLIO;
+
+// Create a transporter with your email service provider settings
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: emailBase,
+    pass: passsword,
+  },
+});
+
+
+//Grab URL and Client
 //DB strings
 const dbName = "Portfolio";
 const collectionName = "Language";
 const url = process.env.NODE_URL_MONGO_LINK;
 
-app.use(cors());
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+
 
 //Mongo Connection
 const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -60,6 +79,32 @@ async function GetLanguages() {
 
 }
 
+app.post("/api/sendEmail", async (req, res) => {
+  const { firstName, lastName, phoneNumber, email, message } = req.body;
+  let subject = "";
+
+  console.log(emailBase);
+
+  try {
+    // Define the email options
+    const mailOptions = {
+      from: emailBase,
+      to: emailBase,
+      cc:  email ,
+      subject: subject,
+      text: message,
+    };
+
+    // Send the email
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent:', info.response);
+
+    res.json({ message: "Email Sent Successfully" });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "Failed to send email" });
+  }
+});
 
 app.get("/languages", async (req, res) => {
     try {

@@ -39,98 +39,84 @@ function App() {
           <NavBar></NavBar>
 
           {/* Apresentation */}
-          <main className='flex items-center justify-center min-h-[100vh]' id='home'> 
+          <main className='flex items-center justify-center min-h-screen' id='home'>
 
-            <section className='flex items-center justify-center  w-full h-full '>
-              
-              <div className='w-1/2 flex '>
+            <section className='flex flex-col sm:flex-row items-center justify-center w-full h-full'>
 
-                <div className='w-1/2 '></div>
+              <div className='sm:w-1/2 flex justify-end'>
 
-                <div className='w-1/2  '>
 
-                  <p className='text-gray-400  dark:text-sky-700'>
+                <div className='w-full sm:w-1/2 p-7 mt-[80px]'>
+                  <p className='text-gray-400 dark:text-sky-700'>
                     <b>{t("main.Hello")} {t("main.firstLine")} </b>
                   </p>
 
-                  <p className='text-[50px]'>
-                    <b className='text-sky-900  dark:text-white'>Daniel Almeida</b>
+                  <p className='text-3xl sm:text-5xl'>
+                    <b className='text-sky-900 dark:text-white'>Daniel Almeida</b>
                   </p>
 
-                  <p className='text-[20px] mb-4 text-gray-400 font-bold'>
+                  <p className='text-lg sm:text-2xl mb-4 text-gray-400 font-bold'>
                     {t("main.secondLine")} <span className='text-gray-500'>Full Stack Developer</span>
                   </p>
 
                   <p className='mb-4 dark:text-gray-400 text-gray-700'>
-                    {t("main.miniDescription")} 
+                    {t("main.miniDescription")}
                   </p>
 
                   <Button
-                    className="bg-sky-800 p-3 pl-7 pr-7 border-2 dark:border-gray-700 border-gray-200 m-1 ml-0 text-gray-200 font-bold rounded-md mt-3 ease-out duration-300
-                    hover:bg-gray-200 hover:text-sky-800 hover:border-sky-800"
+                    className="bg-sky-800 p-3 pl-7 pr-7 border-2  dark:border-gray-700 border-gray-200 m-1 ml-0 text-gray-200 font-bold rounded-md mt-3 ease-out duration-300 hover:bg-gray-200 hover:text-sky-800 hover:border-sky-800"
                     id="HireMe"
                     target=""
                     text="Hire Me"
-                    />
-{/* 
-                  <Button
-
-                    className="bg-sky-600 p-3 pl-7 pr-7 border-2 dark:border-gray-700 border-gray-200 text-gray-200 font-bold rounded-lg  ease-out duration-300
-                     hover:bg-gray-200 hover:text-sky-800 hover:border-sky-7000  m-1"
-                    id="cvDownload"
-                    target=""
-                    text="Download CV"
-                  
-                  /> */}
+                  />
 
                 </div>
 
               </div>
-              
-              <div className='h-full w-1/2 align-middle mr-7' >
-                <img src={Photo} className='w-full drop-shadow-2xl' alt="Profile Photo" />
-              </div>
 
+              <div className='h-1/2 sm:h-full w-full sm:w-1/2 mt-4 sm:mt-0'>
+                <img src={Photo} className='w-full h-full object-cover object-center drop-shadow-2xl' alt="Profile Photo" />
+              </div>
 
             </section>
 
-          </main>
+            </main>
+
           
           {/* About Me */} 
-          <section className='dark:text-gray-400 text-gray-700 flex items-center justify-center p-24 pt-0 min-h-[80vh] pb-[120px] z-0 relative' id="about">
+          <section className='dark:text-gray-400 text-gray-700 flex flex-col sm:flex-row items-center justify-center sm:m-0 p-6 sm:p-24 md:p-24 pt-0 min-h-[80vh] pb-24 sm:pb-[120px] z-0 relative' id="about">
 
-              <div className='w-full ml-auto mr-auto p1'>
+            <div className='w-full mx-auto p-4 sm:p-1 md:p-1'>
 
-                <div className='flex flex-wrap items-center justify-center '>
+              <div className='flex flex-wrap items-center justify-center'>
 
-                  <div className="w-1/2 p-4">
+                <div className="w-full  sm:w-1/2 p-4">
 
-                    <h3 className="text-sky-900  font-light text-3xl uppercase mb-5 text-center block dark:text-sky-700"  >{t("about.Title")}</h3>
-                    
-                    <div className="full p-[70px] m-5 border-2 border-sky-900 drop-shadow-2xl  bg-white dark:bg-zinc-900">
+                  <h3 className="text-sky-900 font-light text-3xl sm:text-4xl uppercase mb-5 text-center block dark:text-sky-700">{t("about.Title")}</h3>
 
-                      <p className='mb-3'>
-                        {t("about.FirstParagraph")} 
-                      </p>
-                      
-                      <p className='mb-3'>
-                        {t("about.SecondParagraph")}             
-                      </p>
+                  <div className="w-full p-5 sm:p-8 md:m-8 border-2 md:ml-6  lg:p-[100px] mt-11  border-sky-900 drop-shadow-2xl bg-white dark:bg-zinc-900">
 
-                      <p>
-                        {t("about.ThirdParagraph")}   
-                      </p>  
+                    <p className='mb-3'>
+                      {t("about.FirstParagraph")}
+                    </p>
 
-                    </div> 
+                    <p className='mb-3'>
+                      {t("about.SecondParagraph")}
+                    </p>
+
+                    <p>
+                      {t("about.ThirdParagraph")}
+                    </p>
 
                   </div>
 
-      
                 </div>
 
               </div>
 
-          </section>
+            </div>
+
+            </section>
 
           {/* Skills */} 
           <section className='dark:text-gray-400 text-gray-700 flex items-center justify-center min-h-[80vh] pt-0  pb-[120px] z-0 relative' id="skills">
@@ -139,9 +125,9 @@ function App() {
 
               <h3 className="text-sky-900  font-light text-3xl uppercase mb-11 text-center block dark:text-sky-700"  >{t("skills.Title")}</h3>
               
-              <div className='flex flex-wrap items-center justify-center text-black'>
+              <div className='lg:flex lg:flex-wrap lg:items-center lg:justify-center md:justify-center md:flex text-black'>
 
-                <div className="w-1/4 m-5 p-7 h-full bg-white dark:bg-zinc-900 drop-shadow-2xl border-2 border-sky-900">
+                <div className="lg:w-1/4 sm:w-w-2/3 lg:m-5 md:w-2/3 p-7 h-full m-5  bg-white dark:bg-zinc-900 drop-shadow-2xl border-2 border-sky-900">
 
                     <h1 className='text-center m-5 font-light text-xl dark:text-sky-700 text-sky-900'>Frontend</h1>
                     
@@ -161,7 +147,7 @@ function App() {
 
                 </div>
 
-                <div className=" w-1/4 m-5 p-7 h-full bg-white dark:bg-zinc-900 drop-shadow-2xl border-2 border-sky-900">
+                <div className="lg:w-1/4 sm:w-w-2/3 lg:m-5 md:w-2/3 p-7 h-full m-5 bg-white dark:bg-zinc-900 drop-shadow-2xl border-2 border-sky-900">
                   
                   <h1 className='text-center m-5 font-light text-xl dark:text-sky-700 text-sky-900 '>Backend</h1>
 
@@ -182,7 +168,7 @@ function App() {
 
                 </div>
 
-                <div className="w-1/4 m-5 p-7 h-full bg-white dark:bg-zinc-900 drop-shadow-2xl border-2 border-sky-900">
+                <div className="lg:w-1/4 sm:w-w-2/3 lg:m-5 md:w-2/3 p-7 h-full m-5 bg-white dark:bg-zinc-900 drop-shadow-2xl border-2 border-sky-900">
                   <h1 className=' text-center m-5 font-light text-xl dark:text-sky-700 text-sky-900 '>Others</h1>
                   
                   <div className='bg-sky-900 w-20 h-20 p-5 top-[-45px] left-1/2 ml-[-40px] absolute inline-block rounded-full'>
@@ -213,9 +199,9 @@ function App() {
 
               <h3 className="text-sky-900  font-light text-3xl uppercase mb-11 text-center block dark:text-sky-700"  >{t("projects.Title")}</h3>
               
-              <div className='flex flex-wrap items-center justify-center text-black'>
+              <div className='lg:flex lg:flex-wrap lg:items-center lg:justify-center md:justify-center md:flex text-black'>
               
-                <Card
+                <Card 
                   title={"Almeida Live Score"}
                 />
                 <Card
@@ -249,7 +235,16 @@ function App() {
           <Footer></Footer>
 
         </div>
+{/* 
+                  <Button
 
+                    className="bg-sky-600 p-3 pl-7 pr-7 border-2 dark:border-gray-700 border-gray-200 text-gray-200 font-bold rounded-lg  ease-out duration-300
+                     hover:bg-gray-200 hover:text-sky-800 hover:border-sky-7000  m-1"
+                    id="cvDownload"
+                    target=""
+                    text="Download CV"
+                  
+                  /> */}
     </>
   )
 }
